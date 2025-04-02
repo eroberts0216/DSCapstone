@@ -91,8 +91,8 @@ PK5_PS_data = PK5_PS_data %>% select(-c(`Enter the number of days you have been 
 PK5_PS_ranking = transmute(PK5_PS_data, scale_1_5 = (PK5_PS_data$`On a scale from 1 - 5, what would you rate your current level of workload?`))
 PK5_PS_ranking = mutate(PK5_PS_ranking, min_sum = rowSums(PK5_PS_data[ ,c(3,5:21)]))
 
-write_xlsx(PK5_PS_ranking, path = "~/Library/CloudStorage/OneDrive-QuinnipiacUniversity/24-25/Spring/DS480/Project/FINALData/Psych_PS_ranking.xlsx")
+write_xlsx(PK5_PS_ranking, path = "~/Library/CloudStorage/OneDrive-QuinnipiacUniversity/24-25/Spring/DS480/Project/FINALData/PK5_PS_ranking.xlsx")
 
-jpeg(file="PK5_PS_ranking_plot.jpeg")
-plot(PK5_PS_ranking$scale_1_5,PK5_PS_ranking$min_sum)
-dev.off()
+#jpeg(file="PK5_PS_ranking_plot.jpeg")
+#plot(PK5_PS_ranking$scale_1_5,PK5_PS_ranking$min_sum)
+#dev.off()
