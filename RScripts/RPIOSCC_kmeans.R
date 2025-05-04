@@ -15,4 +15,4 @@ fviz_cluster(km_RPIOSCC,df_RPIOSCC)
 
 print(km_RPIOSCC)
 
-plot(data_RPIOSCC$scale_1_5,data_RPIOSCC$min_sum)
+#plot(data_RPIOSCC$scale_1_5,data_RPIOSCC$min_sum)

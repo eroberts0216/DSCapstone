@@ -15,4 +15,4 @@ fviz_cluster(km_MESN,df_MESN)
 
 print(km_MESN)
 
-plot(data_MESN$scale_1_5,data_MESN$min_sum)
+#plot(data_MESN$scale_1_5,data_MESN$min_sum)

@@ -2,17 +2,17 @@ library(readxl)
 library(cluster)
 library(factoextra)
 
-data_GenEd = read_excel("OneDrive - Quinnipiac University/24-25/Spring/DS480/Project/DSCapstone/RankingTables/GenEd_ranking.xlsx")
+data_RPIPOO = read_excel("OneDrive - Quinnipiac University/24-25/Spring/DS480/Project/DSCapstone/RankingTables/RPIPOO_ranking.xlsx")
 
-df_GenEd = scale(data_GenEd)
+df_RPIPOO = scale(data_RPIPOO)
 
-fviz_nbclust(df_GenEd, kmeans, method = "wss", k.max = 5)
+fviz_nbclust(df_RPIPOO, kmeans, method = "wss", k.max = 5)
 
 set.seed(123)
-km_GenEd <- kmeans(data_GenEd, 4, nstart = 25)
+km_RPIPOO <- kmeans(data_RPIPOO, 3, nstart = 25)
 
-fviz_cluster(km_GenEd,df_GenEd)
+fviz_cluster(km_RPIPOO,df_RPIPOO)
 
-print(km_GenEd)
+print(km_RPIPOO)
 
-plot(data_GenEd$scale_1_5,data_GenEd$min_sum)
+#plot(data_RPIPOO$scale_1_5,data_RPIPOO$min_sum)

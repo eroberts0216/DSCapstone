@@ -15,4 +15,4 @@ fviz_cluster(km_MSSC,df_MSSC)
 
 print(km_MSSC)
 
-plot(data_MSSC$scale_1_5,data_MSSC$min_sum)
+#plot(data_MSSC$scale_1_5,data_MSSC$min_sum)

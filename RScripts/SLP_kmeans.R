@@ -15,4 +15,4 @@ fviz_cluster(km_SLP,df_SLP)
 
 print(km_SLP)
 
-plot(data_SLP$scale_1_5,data_SLP$min_sum)
+#plot(data_SLP$scale_1_5,data_SLP$min_sum)

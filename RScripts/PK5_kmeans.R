@@ -15,4 +15,4 @@ fviz_cluster(km_PK5,df_PK5)
 
 print(km_PK5)
 
-plot(data_PK5$scale_1_5,data_PK5$min_sum)
+#plot(data_PK5$scale_1_5,data_PK5$min_sum)

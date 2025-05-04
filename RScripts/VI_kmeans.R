@@ -14,4 +14,4 @@ fviz_cluster(km_VI,df_VI)
 
 print(km_VI)
 
-plot(data_VI$scale_1_5,data_VI$min_sum)
+#plot(data_VI$scale_1_5,data_VI$min_sum)

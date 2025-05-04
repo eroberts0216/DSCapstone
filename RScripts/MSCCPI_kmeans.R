@@ -15,4 +15,4 @@ fviz_cluster(km_MSCCPI,df_MSCCPI)
 
 print(km_MSCCPI)
 
-plot(data_MSCCPI$scale_1_5,data_MSCCPI$min_sum)
+#plot(data_MSCCPI$scale_1_5,data_MSCCPI$min_sum)

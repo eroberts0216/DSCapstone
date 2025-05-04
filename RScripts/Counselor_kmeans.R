@@ -2,7 +2,7 @@ library(readxl)
 library(cluster)
 library(factoextra)
 
-data_Counselors = read_excel("OneDrive - Quinnipiac University/24-25/Spring/DS480/Project/DSCapstone/RankingTables/Counselors_ranking.xlsx")
+data_Counselors = read_excel("~/Library/CloudStorage/OneDrive-QuinnipiacUniversity/24-25/Spring/DS480/Project/DSCapstone/RankingTables/Counselors_ranking.xlsx")
 
 df_Counselors = scale(data_Counselors)
 
@@ -15,4 +15,4 @@ fviz_cluster(km_Counselors,df_Counselors)
 
 print(km_Counselors)
 
-plot(data_Counselors$scale_1_5,data_Counselors$min_sum)
+#plot(data_Counselors$scale_1_5,data_Counselors$min_sum)

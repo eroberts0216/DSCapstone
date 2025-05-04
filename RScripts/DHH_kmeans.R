@@ -15,4 +15,4 @@ fviz_cluster(km_DHH,df_DHH)
 
 print(km_DHH)
 
-plot(data_DHH$scale_1_5,data_DHH$min_sum)
+#plot(data_DHH$scale_1_5,data_DHH$min_sum)
