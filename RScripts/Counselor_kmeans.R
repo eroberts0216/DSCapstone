@@ -11,7 +11,8 @@ fviz_nbclust(df_Counselors, kmeans, method = "wss", k.max = 5)
 set.seed(123)
 km_Counselors <- kmeans(data_Counselors, 4, nstart = 25)
 
-fviz_cluster(km_Counselors,df_Counselors)
+fviz_cluster(km_Counselors,df_Counselors, main = "Counselor k-Means", xlab = "Scale 1 - 5", ylab = "Sum of Minutes")
+
 
 print(km_Counselors)
 
